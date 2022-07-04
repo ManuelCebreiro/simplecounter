@@ -11,14 +11,13 @@ import "../styles/index.css";
 function SimpleCounter(props){
     return (
         <div className="Counterfather">
-            <div className="calendar">
-            <i className="far fa-clock"> </i></div>
-            <div className="six">{props.digitSix}</div>
-            <div className="five">{props.digitFive}</div>
-            <div className="four">{props.digitFour}</div>
-            <div className="three">{props.digitThree}</div>
-            <div className="two">{props.digitTwo}</div>
-            <div className="one">{props.digitOne}</div>
+            <div className="calendar"><i className="far fa-clock"> </i></div>
+            <div className="six">{props.digitSix %10}</div>
+            <div className="five">{props.digitFive %10}</div>
+            <div className="four">{props.digitFour % 10}</div>
+            <div className="three">{props.digitThree % 10}</div>
+            <div className="two">{props.digitTwo% 10}</div>
+            <div className="one">{props.digitOne % 10}</div>
 
 
         </div>
